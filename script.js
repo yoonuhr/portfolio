@@ -172,21 +172,6 @@ function updateActiveNavLink() {
     });
 }
 
-// Add some visual feedback for interactive elements
-document.addEventListener('DOMContentLoaded', function() {
-    // Add hover effects to cards
-    const cards = document.querySelectorAll('.experience-card, .cert-card, .contact-item');
-    
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-5px)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-        });
-    });
-});
 
 // Simple error handling
 window.addEventListener('error', function(e) {
@@ -358,7 +343,25 @@ function animateText(element, finalString) {
     });
 }
 
-// Log when everything is loaded
+// Scroll-reveal animations
+function initScrollReveal() {
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.12 }
+    );
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+}
+
+document.addEventListener('DOMContentLoaded', initScrollReveal);
+
 window.addEventListener('load', function() {
-    console.log('🎉 Professional Pilot Portfolio fully loaded!');
+    console.log('Portfolio loaded.');
 });
