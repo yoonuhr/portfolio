@@ -302,8 +302,8 @@ body {
 }
 
 .header-title {
-    font-size: 0.7em;
-    color: var(--text-muted);
+    font-size: 1em;
+    color: var(--text-secondary);
     letter-spacing: 5px;
     text-transform: uppercase;
     line-height: 1.8;
@@ -354,9 +354,9 @@ body {
 
 .row .flight,      .column-titles .flight      { width: 12%; }
 .row .time,        .column-titles .time        { width: 12%; }
-.row .destination, .column-titles .destination { width: 35%; }
+.row .destination, .column-titles .destination { width: 30%; }
 .row .gate,        .column-titles .gate        { width: 15%; }
-.row .status,      .column-titles .status      { width: 26%; }
+.row .status,      .column-titles .status      { width: 31%; }
 
 .destination > span {
     font-size: 1.2em;

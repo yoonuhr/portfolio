@@ -202,7 +202,7 @@ function initFlipBoard() {
             {
                 flight: "MU103",
                 time: "2011",
-                destination: "SHANGHAI CHINA",
+                destination: "SHANGHAI",
                 gate: "PVG",
                 status: "MIDDLE SCHOOL"
             },
