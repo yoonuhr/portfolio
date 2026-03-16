@@ -260,9 +260,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 0;
+    padding: 14px 0;
     border-bottom: 2px dashed #34495e;
-    min-height: 60px;
+    min-height: 80px;
 }
 
 .row:last-child {
@@ -289,13 +289,13 @@ body {
 .letter {
     position: relative;
     display: inline-block;
-    width: 0.9em;
-    height: 1.5em;
-    line-height: 1.5em;
+    width: 1.0em;
+    height: 1.6em;
+    line-height: 1.6em;
     text-align: center;
-    perspective: 300px;
-    margin: 0 0.5px;
-    font-size: 1.2em;
+    perspective: 400px;
+    margin: 0 1px;
+    font-size: 1.6em;
     vertical-align: top;
 }
 
@@ -315,13 +315,13 @@ body {
     border-radius: 3px;
     text-align: center;
     font-weight: bold;
-    line-height: 1.5em;
+    line-height: 1.6em;
 }
 
 .top, .flip-top {
     top: 0;
     border-bottom: 1px solid #000;
-    line-height: 1.5em;
+    line-height: 1.6em;
 }
 
 .bottom, .flip-bottom {
@@ -388,18 +388,18 @@ body {
     .flip-board {
         padding: 15px;
     }
-    
+
     .header-title {
         font-size: 1.2em;
     }
-    
+
     .letter {
-        font-size: 1.0em;
-        width: 0.8em;
-        height: 1.3em;
+        font-size: 1.2em;
+        width: 0.9em;
+        height: 1.5em;
         margin: 0 0.5px;
     }
-    
+
     .destination > span {
         font-size: 1em;
     }
